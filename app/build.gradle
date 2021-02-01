@@ -73,6 +73,17 @@ dependencies {
 
     implementation "androidx.datastore:datastore-preferences:1.0.0-alpha06"
 
+    implementation "com.squareup.okhttp3:okhttp:$okhttp3_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp3_version"
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava3:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-jackson:$retrofit_version"
+
+    implementation "com.fasterxml.jackson.module:jackson-module-kotlin:2.11.0"
+
+    implementation "com.google.code.gson:gson:2.8.6"
+
     testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
