@@ -3,6 +3,8 @@ package a90ms.easy.default_architecture.ui.main
 import a90ms.easy.default_architecture.R
 import a90ms.easy.default_architecture.common.base.BaseActivity
 import a90ms.easy.default_architecture.common.ext.showToast
+import a90ms.easy.default_architecture.data.db.dataStore.MainDataStore
+import a90ms.easy.default_architecture.data.db.main.CoreDataBase
 import a90ms.easy.default_architecture.databinding.ActivityMainBinding
 import android.os.Bundle
 import androidx.activity.viewModels
@@ -17,6 +19,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
         super.onCreate(savedInstanceState)
 
         initBinding()
+        initFetchData()
         initObserver()
     }
 
@@ -38,7 +41,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
         }
     }
 
-    private fun test() {
-
+    fun initFetchData() {
+        mainViewModel.fetchData()
     }
 }

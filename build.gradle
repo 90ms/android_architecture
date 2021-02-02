@@ -13,6 +13,7 @@ buildscript {
         hilt_viewModel_version = "1.0.0-alpha03"
         okhttp3_version = "4.8.1"
         retrofit_version = "2.9.0"
+        ko_version = "4.0.1"
 
     }
 
